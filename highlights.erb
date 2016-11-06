@@ -1,0 +1,251 @@
+<%
+base03  = [ "8", "#002b36"]
+base02  = [ "0", "#073642"]
+base01  = ["10", "#586e75"]
+base00  = ["11", "#657b83"]
+base0   = ["12", "#839496"]
+base1   = ["14", "#93a1a1"]
+base2   = [ "7", "#eee8d5"]
+base3   = ["15", "#fdf6e3"]
+yellow  = [ "3", "#b58900"]
+orange  = [ "9", "#cb4b16"]
+red     = [ "1", "#dc322f"]
+magenta = [ "5", "#d33682"]
+violet  = ["13", "#6c71c4"]
+blue    = [ "4", "#268bd2"]
+cyan    = [ "6", "#2aa198"]
+green   = [ "2", "#859900"]
+
+if background == "light"
+  base03, base3 = base3, base03
+  base02, base2 = base2, base02
+  base01, base1 = base1, base01
+  base00, base0 = base0, base00
+end
+
+def attr(attr)
+  " cterm=" << (attr == "italic" ? "NONE" : attr) << " gui=" << attr
+end
+
+def color(level, colors)
+  colors = [colors, colors] if !colors.is_a?(Array)
+  " cterm" << level << "=" << colors[0] << " gui" << level << "=" << colors[1]
+end
+
+def sp(colors)
+  colors.nil? ? "" : " guisp=" << colors[1]
+end
+
+def hi(attr: "NONE", fg: "NONE", bg: "NONE", sp: nil)
+  res = attr(attr) << color("fg", fg) << color("bg", bg) << sp(sp)
+end
+%>
+  hi ColorColumn<%= hi(bg: base02) %>
+  hi Comment<%= hi(attr: "italic", fg: base01) %>
+  hi ConId<%= hi(fg: yellow) %>
+  hi Conceal<%= hi(fg: blue) %>
+  hi Constant<%= hi(fg: cyan) %>
+  hi Cursor<%= hi(fg: base03, bg: base0) %>
+  hi CursorColumn<%= hi(bg: base02) %>
+  hi CursorLine<%= hi(bg: base02) %>
+  hi CursorLineNr<%= hi(fg: base01) %>
+  hi DiffAdd<%= hi(fg: green, bg: base02) %>
+  hi DiffChange<%= hi(fg: yellow, bg: base02) %>
+  hi DiffDelete<%= hi(fg: red, bg: base02) %>
+  hi DiffText<%= hi(fg: blue, bg: base02) %>
+  hi Directory<%= hi(fg: blue) %>
+  hi Error<%= hi(attr: "bold", fg: red) %>
+  hi ErrorMsg<%= hi(attr: "reverse", fg: red) %>
+  hi FoldColumn<%= hi(fg: base0, bg: base02) %>
+  hi Folded<%= hi(attr: "bold,underline", fg: base0, bg: base02) %>
+  hi Identifier<%= hi(fg: blue) %>
+  hi Ignore<%= hi %>
+  hi IncSearch<%= hi(attr: "standout", fg: orange) %>
+  hi LineNr<%= hi(fg: base01, bg: base02) %>
+  hi MatchParen<%= hi(attr: "bold", fg: red, bg: base01) %>
+  hi ModeMsg<%= hi(fg: blue) %>
+  hi MoreMsg<%= hi(fg: blue) %>
+  hi NonText<%= hi(attr: "bold", fg: base00) %>
+  hi Normal<%= hi(fg: base0, bg: base03) %>
+  hi Pmenu<%= hi(attr: "reverse", fg: base0, bg: base02) %>
+  hi PmenuSbar<%= hi(attr: "reverse", fg: base2, bg: base0) %>
+  hi PmenuSel<%= hi(attr: "reverse", fg: base01, bg: base2) %>
+  hi PmenuThumb<%= hi(attr: "reverse", fg: base0, bg: base03) %>
+  hi PreProc<%= hi(fg: orange) %>
+  hi Question<%= hi(attr: "bold", fg: cyan) %>
+  hi Search<%= hi(attr: "reverse", fg: yellow) %>
+  hi SignColumn<%= hi(fg: base0, bg: base02) %>
+  hi Special<%= hi(fg: red) %>
+  hi SpecialKey<%= hi(attr: "bold", fg: base00, bg: base02) %>
+  hi SpellBad<%= hi(attr: "undercurl", sp: red) %>
+  hi SpellCap<%= hi(attr: "undercurl", sp: violet) %>
+  hi SpellLocal<%= hi(attr: "undercurl", sp: yellow) %>
+  hi SpellRare<%= hi(attr: "undercurl", sp: cyan) %>
+  hi Statement<%= hi(fg: green) %>
+  hi StatusLine<%= hi(attr: "reverse", fg: base1, bg: base03) %>
+  hi StatusLineNC<%= hi(attr: "reverse", fg: base00, bg: base02) %>
+  hi TabLine<%= hi(attr: "underline", fg: base0, bg: base02) %>
+  hi TabLineFill<%= hi(attr: "underline", fg: base0, bg: base02) %>
+  hi TabLineSel<%= hi(attr: "underline,reverse", fg: base01, bg: base2) %>
+  hi Title<%= hi(attr: "bold", fg: orange) %>
+  hi Todo<%= hi(attr: "bold", fg: magenta) %>
+  hi Type<%= hi(fg: yellow) %>
+  hi Underlined<%= hi(fg: violet) %>
+  hi VarId<%= hi(fg: blue) %>
+  hi VertSplit<%= hi(fg: base00, bg: base00) %>
+  hi Visual<%= hi(attr: "reverse", fg: base01, bg: base03) %>
+  hi VisualNOS<%= hi(attr: "reverse", bg: base02) %>
+  hi WarningMsg<%= hi(attr: "bold", fg: red) %>
+  hi WildMenu<%= hi(attr: "reverse", fg: base2, bg: base02) %>
+
+  hi cPreCondit<%= hi(fg: orange) %>
+
+  hi gitcommitBranch<%= hi(attr: "bold", fg: magenta) %>
+  hi gitcommitComment<%= hi(attr: "italic", fg: base01) %>
+  hi gitcommitDiscardedFile<%= hi(attr: "bold", fg: red) %>
+  hi gitcommitDiscardedType<%= hi(fg: red) %>
+  hi gitcommitFile<%= hi(attr: "bold", fg: base0) %>
+  hi gitcommitHeader<%= hi(fg: base01) %>
+  hi gitcommitOnBranch<%= hi(attr: "bold", fg: base01) %>
+  hi gitcommitSelectedFile<%= hi(attr: "bold", fg: green) %>
+  hi gitcommitSelectedType<%= hi(fg: green) %>
+  hi gitcommitUnmerged<%= hi(attr: "bold", fg: green) %>
+  hi gitcommitUnmergedFile<%= hi(attr: "bold", fg: yellow) %>
+  hi gitcommitUntrackedFile<%= hi(attr: "bold", fg: cyan) %>
+
+  hi helpExample<%= hi(fg: base1) %>
+  hi helpHyperTextEntry<%= hi(fg: green) %>
+  hi helpHyperTextJump<%= hi(attr: "underline", fg: blue) %>
+  hi helpNote<%= hi(fg: magenta) %>
+  hi helpOption<%= hi(fg: cyan) %>
+  hi helpVim<%= hi(fg: magenta) %>
+
+  hi hsImport<%= hi(fg: magenta) %>
+  hi hsImportLabel<%= hi(fg: cyan) %>
+  hi hsModuleName<%= hi(attr: "underline", fg: green) %>
+  hi hsModuleStartLabel<%= hi(fg: magenta) %>
+  hi hsNiceOperator<%= hi(fg: cyan) %>
+  hi hsStatement<%= hi(fg: cyan) %>
+  hi hsString<%= hi(fg: base00) %>
+  hi hsStructure<%= hi(fg: cyan) %>
+  hi hsType<%= hi(fg: yellow) %>
+  hi hsTypedef<%= hi(fg: cyan) %>
+  hi hsVarSym<%= hi(fg: cyan) %>
+  hi hs_DeclareFunction<%= hi(fg: orange) %>
+  hi hs_OpFunctionName<%= hi(fg: yellow) %>
+  hi hs_hlFunctionName<%= hi(fg: blue) %>
+
+  hi htmlArg<%= hi(fg: base00) %>
+  hi htmlEndTag<%= hi(fg: base01) %>
+  hi htmlSpecialTagName<%= hi(attr: "italic", fg: blue) %>
+  hi htmlTag<%= hi(fg: base01) %>
+  hi htmlTagN<%= hi(attr: "bold", fg: base1) %>
+  hi htmlTagName<%= hi(attr: "bold", fg: blue) %>
+
+  hi javaScript<%= hi(fg: yellow) %>
+
+  hi pandocBlockQuote<%= hi(fg: blue) %>
+  hi pandocBlockQuoteLeader1<%= hi(fg: blue) %>
+  hi pandocBlockQuoteLeader2<%= hi(fg: cyan) %>
+  hi pandocBlockQuoteLeader3<%= hi(fg: yellow) %>
+  hi pandocBlockQuoteLeader4<%= hi(fg: red) %>
+  hi pandocBlockQuoteLeader5<%= hi(fg: base0) %>
+  hi pandocBlockQuoteLeader6<%= hi(fg: base01) %>
+  hi pandocCitation<%= hi(fg: magenta) %>
+  hi pandocCitationDelim<%= hi(fg: magenta) %>
+  hi pandocCitationID<%= hi(attr: "underline", fg: magenta) %>
+  hi pandocCitationRef<%= hi(fg: magenta) %>
+  hi pandocComment<%= hi(attr: "italic", fg: base01) %>
+  hi pandocDefinitionBlock<%= hi(fg: violet) %>
+  hi pandocDefinitionIndctr<%= hi(attr: "bold", fg: violet) %>
+  hi pandocDefinitionTerm<%= hi(attr: "standout", fg: violet) %>
+  hi pandocEmphasis<%= hi(attr: "italic", fg: base0) %>
+  hi pandocEmphasisDefinition<%= hi(attr: "italic", fg: violet) %>
+  hi pandocEmphasisHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocEmphasisNested<%= hi(attr: "bold", fg: base0) %>
+  hi pandocEmphasisNestedDefinition<%= hi(attr: "bold", fg: violet) %>
+  hi pandocEmphasisNestedHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocEmphasisNestedTable<%= hi(attr: "bold", fg: blue) %>
+  hi pandocEmphasisTable<%= hi(attr: "italic", fg: blue) %>
+  hi pandocEscapePair<%= hi(attr: "bold", fg: red) %>
+  hi pandocFootnote<%= hi(fg: green) %>
+  hi pandocFootnoteDefLink<%= hi(attr: "bold", fg: green) %>
+  hi pandocFootnoteInline<%= hi(attr: "bold,underline", fg: green) %>
+  hi pandocFootnoteLink<%= hi(attr: "underline", fg: green) %>
+  hi pandocHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocHeadingMarker<%= hi(attr: "bold", fg: yellow) %>
+  hi pandocImageCaption<%= hi(attr: "bold,underline", fg: violet) %>
+  hi pandocLinkDefinition<%= hi(attr: "underline", fg: cyan) %>
+  hi pandocLinkDefinitionID<%= hi(attr: "bold", fg: blue) %>
+  hi pandocLinkDelim<%= hi(fg: base01) %>
+  hi pandocLinkLabel<%= hi(attr: "underline", fg: blue) %>
+  hi pandocLinkText<%= hi(attr: "bold,underline", fg: blue) %>
+  hi pandocLinkTitle<%= hi(attr: "underline", fg: base00) %>
+  hi pandocLinkTitleDelim<%= hi(attr: "underline", fg: base01) %>
+  hi pandocLinkURL<%= hi(attr: "underline", fg: base00) %>
+  hi pandocListMarker<%= hi(fg: magenta) %>
+  hi pandocListReference<%= hi(attr: "underline", fg: magenta) %>
+  hi pandocMetadata<%= hi(attr: "bold", fg: blue) %>
+  hi pandocMetadataDelim<%= hi(fg: base01) %>
+  hi pandocMetadataKey<%= hi(fg: blue) %>
+  hi pandocNonBreakingSpace<%= hi(attr: "reverse", fg: red) %>
+  hi pandocRule<%= hi(attr: "bold", fg: blue) %>
+  hi pandocRuleLine<%= hi(attr: "bold", fg: blue) %>
+  hi pandocStrikeout<%= hi(attr: "reverse", fg: base01) %>
+  hi pandocStrikeoutDefinition<%= hi(attr: "reverse", fg: violet) %>
+  hi pandocStrikeoutHeading<%= hi(attr: "reverse", fg: orange) %>
+  hi pandocStrikeoutTable<%= hi(attr: "reverse", fg: blue) %>
+  hi pandocStrongEmphasis<%= hi(attr: "bold", fg: base0) %>
+  hi pandocStrongEmphasisDefinition<%= hi(attr: "bold", fg: violet) %>
+  hi pandocStrongEmphasisEmphasis<%= hi(attr: "bold", fg: base0) %>
+  hi pandocStrongEmphasisEmphasisDefinition<%= hi(attr: "bold", fg: violet) %>
+  hi pandocStrongEmphasisEmphasisHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocStrongEmphasisEmphasisTable<%= hi(attr: "bold", fg: blue) %>
+  hi pandocStrongEmphasisHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocStrongEmphasisNested<%= hi(attr: "bold", fg: base0) %>
+  hi pandocStrongEmphasisNestedDefinition<%= hi(attr: "bold", fg: violet) %>
+  hi pandocStrongEmphasisNestedHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocStrongEmphasisNestedTable<%= hi(attr: "bold", fg: blue) %>
+  hi pandocStrongEmphasisTable<%= hi(attr: "bold", fg: blue) %>
+  hi pandocStyleDelim<%= hi(fg: base01) %>
+  hi pandocSubscript<%= hi(fg: violet) %>
+  hi pandocSubscriptDefinition<%= hi(fg: violet) %>
+  hi pandocSubscriptHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocSubscriptTable<%= hi(fg: blue) %>
+  hi pandocSuperscript<%= hi(fg: violet) %>
+  hi pandocSuperscriptDefinition<%= hi(fg: violet) %>
+  hi pandocSuperscriptHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocSuperscriptTable<%= hi(fg: blue) %>
+  hi pandocTable<%= hi(fg: blue) %>
+  hi pandocTableStructure<%= hi(fg: blue) %>
+  hi pandocTableZebraDark<%= hi(fg: blue, bg: base02) %>
+  hi pandocTableZebraLight<%= hi(fg: blue, bg: base03) %>
+  hi pandocTitleBlock<%= hi(fg: blue) %>
+  hi pandocTitleBlockTitle<%= hi(attr: "bold", fg: blue) %>
+  hi pandocTitleComment<%= hi(attr: "bold", fg: blue) %>
+  hi pandocVerbatimBlock<%= hi(fg: yellow) %>
+  hi pandocVerbatimInline<%= hi(fg: yellow) %>
+  hi pandocVerbatimInlineDefinition<%= hi(fg: violet) %>
+  hi pandocVerbatimInlineHeading<%= hi(attr: "bold", fg: orange) %>
+  hi pandocVerbatimInlineTable<%= hi(fg: blue) %>
+
+  hi perlHereDoc<%= hi(fg: base1, bg: base03) %>
+  hi perlStatementFileDesc<%= hi(fg: cyan, bg: base03) %>
+  hi perlVarPlain<%= hi(fg: yellow, bg: base03) %>
+
+  hi rubyDefine<%= hi(attr: "bold", fg: base1, bg: base03) %>
+
+  hi texMathMatcher<%= hi(fg: yellow, bg: base03) %>
+  hi texMathZoneX<%= hi(fg: yellow, bg: base03) %>
+  hi texRefLabel<%= hi(fg: yellow, bg: base03) %>
+  hi texStatement<%= hi(fg: cyan, bg: base03) %>
+
+  hi vimCmdSep<%= hi(attr: "bold", fg: blue) %>
+  hi vimCommand<%= hi(fg: yellow) %>
+  hi vimCommentString<%= hi(fg: violet) %>
+  hi vimGroup<%= hi(attr: "bold,underline", fg: blue) %>
+  hi vimHiGroup<%= hi(fg: blue) %>
+  hi vimHiLink<%= hi(fg: blue) %>
+  hi vimIsCommand<%= hi(fg: base00) %>
+  hi vimSynMtchOpt<%= hi(fg: yellow) %>
+  hi vimSynType<%= hi(fg: cyan) %>
