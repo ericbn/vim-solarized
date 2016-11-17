@@ -2,7 +2,7 @@
 
 A simpler fork of the awesome [Solarized colorscheme for Vim](https://github.com/altercation/vim-colors-solarized) by Ethan Schoonover, completely written from scratch.
 
-What was removed? The degraded 256 color scheme, and all the functions and configuration options. Bold and underline attributes are enabled for both terminal and GUI modes. Italic is only enabled for GUI.
+What was removed? The degraded 256 color scheme, all functions, mappings and menus, and the configuration options. Bold and underline attributes are enabled for both terminal and GUI modes. Italic is only enabled for GUI.
 
 ERB templates are used to generate the colorscheme, so the code is easy to maintain and it runs fast in Vim.
 
@@ -65,14 +65,31 @@ Add one of the following to your `.vimrc`:
 
 MacVim users will also want to configure their `.gvimrc` file, or add the following line to `.vimrc`:
 
-    let macvim_skip_colorscheme = 1
+    let macvim_skip_colorscheme=1
 
 ## Contributing
 
 - Edit the ERB files and run `erb solarized.vim.erb > colors/solarized.vim` to generate the colorscheme file. Ruby 2 required.
-- Submit the changes in both the ERB and the colorscheme files.
+- Submit the changes in both the colorscheme and the ERB files.
 
 ## License
 
-Copyright © Ethan Schoonover. Distributed under the same terms as Vim itself.
-See `:help license`.
+Copyright (c) 2011 Ethan Schoonover
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
