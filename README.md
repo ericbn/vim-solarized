@@ -70,11 +70,6 @@ Add one of the following to your `.vimrc`:
         set background=light
         colorscheme solarized
 
-MacVim users will also want to configure their `.gvimrc` file, or add the
-following line to `.vimrc`:
-
-    let macvim_skip_colorscheme=1
-
 ## Contributing
 
 - Edit the ERB files and run `erb solarized.vim.erb > colors/solarized.vim` to
