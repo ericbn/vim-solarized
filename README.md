@@ -1,14 +1,20 @@
 # solarized.vim
 
-A simpler fork of the awesome [Solarized colorscheme for Vim](https://github.com/altercation/vim-colors-solarized) by Ethan Schoonover, completely written from scratch.
+A simpler fork of the awesome [Solarized colorscheme for
+Vim](https://github.com/altercation/vim-colors-solarized) by Ethan Schoonover,
+completely written from scratch.
 
-What was removed? The degraded 256 color scheme, all functions, mappings and menus, and the configuration options. Bold and underline attributes are enabled for both terminal and GUI modes. Italic is only enabled for GUI.
+What was removed? The degraded 256 color scheme, all functions, mappings and
+menus, and the configuration options. Bold and underline attributes are enabled
+for both terminal and GUI modes. Italic is only enabled for GUI.
 
-ERB templates are used to generate the colorscheme, so the code is easy to maintain and it runs fast in Vim.
+ERB templates are used to generate the colorscheme, so the code is easy to
+maintain and it runs fast in Vim.
 
 ## Requirements
 
-For users of Vim in terminal mode, the terminal emulator color scheme must be set to the Solarized palette:
+For users of Vim in terminal mode, the terminal emulator color scheme must be
+set to the Solarized palette:
 ```
 Term Color | Hex     | RGB
 -----------|---------|------------
@@ -30,7 +36,8 @@ brcyan     | #93a1a1 | 147 161 161
 brwhite    | #fdf6e3 | 253 246 227
 ```
 
-Configuration files for the main terminal emulators can be found in the [Solarized](https://github.com/altercation/solarized) repository.
+Configuration files for the main terminal emulators can be found in the
+[Solarized](https://github.com/altercation/solarized) repository.
 
 ## Installation
 
@@ -63,13 +70,15 @@ Add one of the following to your `.vimrc`:
         set background=light
         colorscheme solarized
 
-MacVim users will also want to configure their `.gvimrc` file, or add the following line to `.vimrc`:
+MacVim users will also want to configure their `.gvimrc` file, or add the
+following line to `.vimrc`:
 
     let macvim_skip_colorscheme=1
 
 ## Contributing
 
-- Edit the ERB files and run `erb solarized.vim.erb > colors/solarized.vim` to generate the colorscheme file. Ruby 2 required.
+- Edit the ERB files and run `erb solarized.vim.erb > colors/solarized.vim` to
+  generate the colorscheme file. Ruby 2 required.
 - Submit the changes in both the colorscheme and the ERB files.
 
 ## License
