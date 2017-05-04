@@ -3,10 +3,10 @@ def render(background)
   ERB.new(File.read("highlights.erb")).result(binding)
 end
 %>hi clear
-
 if exists("syntax_on")
   syntax reset
 endif
+let g:colors_name = "solarized"
 
 if &background ==# "light"
 <%= render("light") %>
