@@ -70,6 +70,13 @@ Add one of the following to your `.vimrc`:
         set background=light
         colorscheme solarized
 
+## True-color support
+
+The colorscheme is ready for true-color support. Just enable it in your
+`.vimrc` with:
+
+    set termguicolors
+
 ## Contributing
 
 - Edit the ERB files and run `erb solarized.vim.erb > colors/solarized.vim` to
