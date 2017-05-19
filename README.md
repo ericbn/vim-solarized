@@ -13,8 +13,9 @@ maintain and it runs fast in Vim.
 
 ## Requirements
 
-For users of Vim in terminal mode, the terminal emulator color scheme must be
-set to the Solarized palette:
+For users of Vim in terminal mode, the terminal emulator must either support
+[true-color](#true-color-support), or be configured with the Solarized color
+palette:
 ```
 Term Color | Hex     | RGB
 -----------|---------|------------
@@ -36,7 +37,7 @@ brcyan     | #93a1a1 | 147 161 161
 brwhite    | #fdf6e3 | 253 246 227
 ```
 
-Configuration files for the main terminal emulators can be found in the
+Color palette files for the main terminal emulators can be found in the
 [Solarized](https://github.com/altercation/solarized) repository.
 
 ## Installation
