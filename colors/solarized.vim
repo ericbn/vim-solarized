@@ -39,7 +39,7 @@ if &background ==# "light"
   hi PmenuThumb cterm=reverse gui=reverse ctermfg=11 guifg=#657b83 ctermbg=15 guibg=#fdf6e3
   hi PreProc cterm=NONE gui=NONE ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi Question cterm=bold gui=bold ctermfg=6 guifg=#2aa198 ctermbg=NONE guibg=NONE
-  hi QuickFixLine cterm=reverse gui=reverse ctermfg=3 guifg=#b58900 ctermbg=15 guibg=#fdf6e3
+  hi QuickFixLine cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=7 guibg=#eee8d5
   hi Search cterm=reverse gui=reverse ctermfg=3 guifg=#b58900 ctermbg=NONE guibg=NONE
   hi SignColumn cterm=NONE gui=NONE ctermfg=11 guifg=#657b83 ctermbg=7 guibg=#eee8d5
   hi Special cterm=NONE gui=NONE ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
@@ -252,7 +252,7 @@ else
   hi PmenuThumb cterm=reverse gui=reverse ctermfg=12 guifg=#839496 ctermbg=8 guibg=#002b36
   hi PreProc cterm=NONE gui=NONE ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi Question cterm=bold gui=bold ctermfg=6 guifg=#2aa198 ctermbg=NONE guibg=NONE
-  hi QuickFixLine cterm=reverse gui=reverse ctermfg=3 guifg=#b58900 ctermbg=8 guibg=#002b36
+  hi QuickFixLine cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=0 guibg=#073642
   hi Search cterm=reverse gui=reverse ctermfg=3 guifg=#b58900 ctermbg=NONE guibg=NONE
   hi SignColumn cterm=NONE gui=NONE ctermfg=12 guifg=#839496 ctermbg=0 guibg=#073642
   hi Special cterm=NONE gui=NONE ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
