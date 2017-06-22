@@ -44,16 +44,16 @@ Color palette files for the main terminal emulators can be found in the
 
 - Manual:
 
-        curl -fLo ~/.vim/colors/solarized.vim --create-dirs https://raw.githubusercontent.com/ericbn/vim-solarized/master/colors/solarized.vim
+      curl -fLo ~/.vim/colors/solarized.vim --create-dirs https://raw.githubusercontent.com/ericbn/vim-solarized/master/colors/solarized.vim
 
 - Using [pathogen.vim](https://github.com/tpope/vim-pathogen):
 
-        cd ~/.vim/bundle
-        git clone git://github.com/ericbn/vim-solarized.git
+      cd ~/.vim/bundle
+      git clone git://github.com/ericbn/vim-solarized.git
 
 - Using [vim-plug](https://github.com/junegunn/vim-plug):
 
-        Plug 'ericbn/vim-solarized'
+      Plug 'ericbn/vim-solarized'
 
 ## Configuration
 
@@ -61,15 +61,15 @@ Add one of the following to your `.vimrc`:
 
 - For dark background:
 
-        syntax enable
-        set background=dark
-        colorscheme solarized
+      syntax enable
+      set background=dark
+      colorscheme solarized
 
 - For light background:
 
-        syntax enable
-        set background=light
-        colorscheme solarized
+      syntax enable
+      set background=light
+      colorscheme solarized
 
 ## True-color support
 
