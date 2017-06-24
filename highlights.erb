@@ -1,5 +1,5 @@
 <%
-base03  = [ "8", "#002b36"]
+base03  = [ "8", "#002732"] # L*a*b 13 -12 -12
 base02  = [ "0", "#073642"]
 base01  = ["10", "#586e75"]
 base00  = ["11", "#657b83"]
@@ -14,7 +14,7 @@ magenta = [ "5", "#d33682"]
 violet  = ["13", "#6c71c4"]
 blue    = [ "4", "#268bd2"]
 cyan    = [ "6", "#2aa198"]
-green   = [ "2", "#859900"]
+green   = [ "2", "#719e07"] # L*a*b 60 -30  60 experimental
 
 if background == "light"
   base03, base3 = base3, base03
@@ -40,6 +40,8 @@ def hi(attr: "NONE", fg: "NONE", bg: "NONE", sp: nil)
   res = attr(attr) << color("fg", fg) << color("bg", bg) << sp(sp)
 end
 %>
+  hi Normal<%= hi(fg: base0, bg: base03) %>
+
   hi ColorColumn<%= hi(bg: base02) %>
   hi Comment<%= hi(attr: "italic", fg: base01) %>
   hi ConId<%= hi(fg: yellow) %>
@@ -66,7 +68,6 @@ end
   hi ModeMsg<%= hi(fg: blue) %>
   hi MoreMsg<%= hi(fg: blue) %>
   hi NonText<%= hi(attr: "bold", fg: base00) %>
-  hi Normal<%= hi(fg: base0, bg: base03) %>
   hi Pmenu<%= hi(attr: "reverse", fg: base0, bg: base02) %>
   hi PmenuSbar<%= hi(attr: "reverse", fg: base2, bg: base0) %>
   hi PmenuSel<%= hi(attr: "reverse", fg: base01, bg: base2) %>
