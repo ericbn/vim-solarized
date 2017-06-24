@@ -434,40 +434,40 @@ else
 
 endif
 
-hi link diffAdded Statement
-hi link diffLine Identifier
+hi! link diffAdded Statement
+hi! link diffLine Identifier
 
-hi link gitcommitDiscarded gitcommitComment
-hi link gitcommitDiscardedArrow gitcommitDiscardedFile
-hi link gitcommitNoBranch gitcommitBranch
-hi link gitcommitSelected gitcommitComment
-hi link gitcommitSelectedArrow gitcommitSelectedFile
-hi link gitcommitUnmergedArrow gitcommitUnmergedFile
-hi link gitcommitUntracked gitcommitComment
+hi! link gitcommitDiscarded gitcommitComment
+hi! link gitcommitDiscardedArrow gitcommitDiscardedFile
+hi! link gitcommitNoBranch gitcommitBranch
+hi! link gitcommitSelected gitcommitComment
+hi! link gitcommitSelectedArrow gitcommitSelectedFile
+hi! link gitcommitUnmergedArrow gitcommitUnmergedFile
+hi! link gitcommitUntracked gitcommitComment
 
-hi link helpSpecial Special
+hi! link helpSpecial Special
 
-hi link hsDelimTypeExport Delimiter
-hi link hsImportParams Delimiter
-hi link hsModuleStartLabel hsStructure
-hi link hsModuleWhereLabel hsModuleStartLabel
+hi! link hsDelimTypeExport Delimiter
+hi! link hsImportParams Delimiter
+hi! link hsModuleStartLabel hsStructure
+hi! link hsModuleWhereLabel hsModuleStartLabel
 
-hi link lCursor Cursor
+hi! link lCursor Cursor
 
-hi link pandocCodeBlock pandocVerbatimBlock
-hi link pandocCodeBlockDelim pandocVerbatimBlock
-hi link pandocEscapedCharacter pandocEscapePair
-hi link pandocLineBreak pandocEscapePair
-hi link pandocMetadataTitle pandocMetadata
-hi link pandocTableStructureEnd pandocTableStructure
-hi link pandocTableStructureTop pandocTableStructure
-hi link pandocVerbatimBlockDeep pandocVerbatimBlock
+hi! link pandocCodeBlock pandocVerbatimBlock
+hi! link pandocCodeBlockDelim pandocVerbatimBlock
+hi! link pandocEscapedCharacter pandocEscapePair
+hi! link pandocLineBreak pandocEscapePair
+hi! link pandocMetadataTitle pandocMetadata
+hi! link pandocTableStructureEnd pandocTableStructure
+hi! link pandocTableStructureTop pandocTableStructure
+hi! link pandocVerbatimBlockDeep pandocVerbatimBlock
 
-hi link vimFunc Function
-hi link vimSet Normal
-hi link vimSetEqual Normal
-hi link vimUserFunc Function
-hi link vimVar Identifier
+hi! link vimFunc Function
+hi! link vimSet Normal
+hi! link vimSetEqual Normal
+hi! link vimUserFunc Function
+hi! link vimVar Identifier
 
 " License "{{{
 " ---------------------------------------------------------------------
