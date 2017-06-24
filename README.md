@@ -21,13 +21,13 @@ Term Color | Hex     | RGB
 -----------|---------|------------
 black      | #073642 |   7  54  66
 red        | #dc322f | 220  50  47
-green      | #859900 | 133 153   0
+green      | #719e07 | 113 158   7
 yellow     | #b58900 | 181 137   0
 blue       | #268bd2 |  38 139 210
 magenta    | #d33682 | 211  54 130
 cyan       | #2aa198 |  42 161 152
 white      | #eee8d5 | 238 232 213
-brblack    | #002b36 |   0  43  54
+brblack    | #002732 |   0  39  50
 brred      | #cb4b16 | 203  75  22
 brgreen    | #586e75 |  88 110 117
 bryellow   | #657b83 | 101 123 131
@@ -73,8 +73,8 @@ Add one of the following to your `.vimrc`:
 
 ## True-color support
 
-The colorscheme is ready for true-color support. Just enable it in your
-`.vimrc` with:
+The colorscheme is ready for true-color support (requires at least Vim
+7.4.1799). Enable it in your `.vimrc` with:
 
     set termguicolors
 
