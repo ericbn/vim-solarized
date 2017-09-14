@@ -30,7 +30,7 @@ if &background ==# "light"
   hi Ignore cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE
   hi IncSearch cterm=standout gui=standout ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi LineNr cterm=NONE gui=NONE ctermfg=14 guifg=#93a1a1 ctermbg=7 guibg=#eee8d5
-  hi MatchParen cterm=bold gui=bold ctermfg=1 guifg=#dc322f ctermbg=14 guibg=#93a1a1
+  hi MatchParen cterm=bold gui=bold ctermfg=0 guifg=#073642 ctermbg=5 guibg=#d33682
   hi ModeMsg cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi MoreMsg cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi NonText cterm=bold gui=bold ctermfg=12 guifg=#839496 ctermbg=NONE guibg=NONE
@@ -244,7 +244,7 @@ else
   hi Ignore cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE
   hi IncSearch cterm=standout gui=standout ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi LineNr cterm=NONE gui=NONE ctermfg=10 guifg=#586e75 ctermbg=0 guibg=#073642
-  hi MatchParen cterm=bold gui=bold ctermfg=1 guifg=#dc322f ctermbg=10 guibg=#586e75
+  hi MatchParen cterm=bold gui=bold ctermfg=7 guifg=#eee8d5 ctermbg=5 guibg=#d33682
   hi ModeMsg cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi MoreMsg cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi NonText cterm=bold gui=bold ctermfg=11 guifg=#657b83 ctermbg=NONE guibg=NONE
