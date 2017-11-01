@@ -1,19 +1,19 @@
 <%
 base03  = [ "8", "#002732"] # L*a*b 13 -12 -12
-base02  = [ "0", "#073642"]
-base01  = ["10", "#586e75"]
-base00  = ["11", "#657b83"]
-base0   = ["12", "#839496"]
-base1   = ["14", "#93a1a1"]
-base2   = [ "7", "#eee8d5"]
-base3   = ["15", "#fdf6e3"]
-yellow  = [ "3", "#b58900"]
-orange  = [ "9", "#cb4b16"]
-red     = [ "1", "#dc322f"]
-magenta = [ "5", "#d33682"]
-violet  = ["13", "#6c71c4"]
-blue    = [ "4", "#268bd2"]
-cyan    = [ "6", "#2aa198"]
+base02  = [ "0", "#073642"] # L*a*b 20 -12 -12
+base01  = ["10", "#586e75"] # L*a*b 45 -07 -07
+base00  = ["11", "#657b83"] # L*a*b 50 -07 -07
+base0   = ["12", "#839496"] # L*a*b 60 -06 -03
+base1   = ["14", "#93a1a1"] # L*a*b 65 -05 -02
+base2   = [ "7", "#eee8d5"] # L*a*b 92  00  10
+base3   = ["15", "#fdf6e3"] # L*a*b 97  00  10
+yellow  = [ "3", "#b58900"] # L*a*b 60  10  65
+orange  = [ "9", "#cb4b16"] # L*a*b 50  50  55
+red     = [ "1", "#dc322f"] # L*a*b 50  65  45
+magenta = [ "5", "#d33682"] # L*a*b 50  65 -05
+violet  = ["13", "#6c71c4"] # L*a*b 50  15 -45
+blue    = [ "4", "#268bd2"] # L*a*b 55 -10 -45
+cyan    = [ "6", "#2aa198"] # L*a*b 60 -35 -05
 green   = [ "2", "#719e07"] # L*a*b 60 -30  60 experimental
 
 if background == "light"
@@ -62,7 +62,7 @@ end
   hi Folded<%= hi(attr: "bold,underline", fg: base0, bg: base02) %>
   hi Identifier<%= hi(fg: blue) %>
   hi Ignore<%= hi %>
-  hi IncSearch<%= hi(attr: "standout", fg: orange) %>
+  hi IncSearch<%= hi(attr: "bold,reverse", fg: orange) %>
   hi LineNr<%= hi(fg: base01, bg: base02) %>
   hi MatchParen<%= hi(attr: "bold", fg: base2, bg: magenta) %>
   hi ModeMsg<%= hi(fg: blue) %>
@@ -160,7 +160,7 @@ end
   hi pandocComment<%= hi(attr: "italic", fg: base01) %>
   hi pandocDefinitionBlock<%= hi(fg: violet) %>
   hi pandocDefinitionIndctr<%= hi(attr: "bold", fg: violet) %>
-  hi pandocDefinitionTerm<%= hi(attr: "standout", fg: violet) %>
+  hi pandocDefinitionTerm<%= hi(attr: "bold,reverse", fg: violet) %>
   hi pandocEmphasis<%= hi(attr: "italic", fg: base0) %>
   hi pandocEmphasisDefinition<%= hi(attr: "italic", fg: violet) %>
   hi pandocEmphasisHeading<%= hi(attr: "bold", fg: orange) %>

@@ -28,7 +28,7 @@ if &background ==# "light"
   hi Folded cterm=bold,underline gui=bold,underline ctermfg=11 guifg=#657b83 ctermbg=7 guibg=#eee8d5
   hi Identifier cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi Ignore cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE
-  hi IncSearch cterm=standout gui=standout ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
+  hi IncSearch cterm=bold,reverse gui=bold,reverse ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi LineNr cterm=NONE gui=NONE ctermfg=14 guifg=#93a1a1 ctermbg=7 guibg=#eee8d5
   hi MatchParen cterm=bold gui=bold ctermfg=0 guifg=#073642 ctermbg=5 guibg=#d33682
   hi ModeMsg cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
@@ -126,7 +126,7 @@ if &background ==# "light"
   hi pandocComment cterm=NONE gui=italic ctermfg=14 guifg=#93a1a1 ctermbg=NONE guibg=NONE
   hi pandocDefinitionBlock cterm=NONE gui=NONE ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
   hi pandocDefinitionIndctr cterm=bold gui=bold ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
-  hi pandocDefinitionTerm cterm=standout gui=standout ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
+  hi pandocDefinitionTerm cterm=bold,reverse gui=bold,reverse ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
   hi pandocEmphasis cterm=NONE gui=italic ctermfg=11 guifg=#657b83 ctermbg=NONE guibg=NONE
   hi pandocEmphasisDefinition cterm=NONE gui=italic ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
   hi pandocEmphasisHeading cterm=bold gui=bold ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
@@ -242,7 +242,7 @@ else
   hi Folded cterm=bold,underline gui=bold,underline ctermfg=12 guifg=#839496 ctermbg=0 guibg=#073642
   hi Identifier cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi Ignore cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE
-  hi IncSearch cterm=standout gui=standout ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
+  hi IncSearch cterm=bold,reverse gui=bold,reverse ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi LineNr cterm=NONE gui=NONE ctermfg=10 guifg=#586e75 ctermbg=0 guibg=#073642
   hi MatchParen cterm=bold gui=bold ctermfg=7 guifg=#eee8d5 ctermbg=5 guibg=#d33682
   hi ModeMsg cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
@@ -340,7 +340,7 @@ else
   hi pandocComment cterm=NONE gui=italic ctermfg=10 guifg=#586e75 ctermbg=NONE guibg=NONE
   hi pandocDefinitionBlock cterm=NONE gui=NONE ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
   hi pandocDefinitionIndctr cterm=bold gui=bold ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
-  hi pandocDefinitionTerm cterm=standout gui=standout ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
+  hi pandocDefinitionTerm cterm=bold,reverse gui=bold,reverse ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
   hi pandocEmphasis cterm=NONE gui=italic ctermfg=12 guifg=#839496 ctermbg=NONE guibg=NONE
   hi pandocEmphasisDefinition cterm=NONE gui=italic ctermfg=13 guifg=#6c71c4 ctermbg=NONE guibg=NONE
   hi pandocEmphasisHeading cterm=bold gui=bold ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
