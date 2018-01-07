@@ -463,6 +463,9 @@ hi! link pandocTableStructureEnd pandocTableStructure
 hi! link pandocTableStructureTop pandocTableStructure
 hi! link pandocVerbatimBlockDeep pandocVerbatimBlock
 
+hi! link StatusLineTerm StatusLine
+hi! link StatusLineTermNC StatusLineNC
+
 hi! link vimFunc Function
 hi! link vimSet Normal
 hi! link vimSetEqual Normal
