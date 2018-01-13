@@ -45,10 +45,10 @@ if &background ==# "light"
   hi SignColumn cterm=NONE gui=NONE ctermfg=11 guifg=#657b83 ctermbg=7 guibg=#eee8d5
   hi Special cterm=NONE gui=NONE ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
   hi SpecialKey cterm=bold gui=bold ctermfg=12 guifg=#839496 ctermbg=7 guibg=#eee8d5
-  hi SpellBad cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#dc322f
-  hi SpellCap cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#6c71c4
-  hi SpellLocal cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#b58900
-  hi SpellRare cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#2aa198
+  hi SpellBad cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#dc322f
+  hi SpellCap cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#6c71c4
+  hi SpellLocal cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#b58900
+  hi SpellRare cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#2aa198
   hi Statement cterm=NONE gui=NONE ctermfg=2 guifg=#719e07 ctermbg=NONE guibg=NONE
   hi StatusLine cterm=reverse gui=reverse ctermfg=10 guifg=#586e75 ctermbg=15 guibg=#fdf6e3
   hi StatusLineNC cterm=reverse gui=reverse ctermfg=12 guifg=#839496 ctermbg=7 guibg=#eee8d5
@@ -259,10 +259,10 @@ else
   hi SignColumn cterm=NONE gui=NONE ctermfg=12 guifg=#839496 ctermbg=0 guibg=#073642
   hi Special cterm=NONE gui=NONE ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
   hi SpecialKey cterm=bold gui=bold ctermfg=11 guifg=#657b83 ctermbg=0 guibg=#073642
-  hi SpellBad cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#dc322f
-  hi SpellCap cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#6c71c4
-  hi SpellLocal cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#b58900
-  hi SpellRare cterm=undercurl gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#2aa198
+  hi SpellBad cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#dc322f
+  hi SpellCap cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#6c71c4
+  hi SpellLocal cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#b58900
+  hi SpellRare cterm=underline gui=undercurl ctermfg=NONE guifg=NONE ctermbg=NONE guibg=NONE guisp=#2aa198
   hi Statement cterm=NONE gui=NONE ctermfg=2 guifg=#719e07 ctermbg=NONE guibg=NONE
   hi StatusLine cterm=reverse gui=reverse ctermfg=14 guifg=#93a1a1 ctermbg=8 guibg=#002732
   hi StatusLineNC cterm=reverse gui=reverse ctermfg=11 guifg=#657b83 ctermbg=0 guibg=#073642

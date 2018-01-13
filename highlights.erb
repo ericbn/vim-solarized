@@ -24,7 +24,8 @@ if background == "light"
 end
 
 def attr(attr)
-  " cterm=" << (attr == "italic" ? "NONE" : attr) << " gui=" << attr
+  " cterm=" << (attr == "italic" ? "NONE" :
+               (attr == "undercurl" ? "underline" : attr)) << " gui=" << attr
 end
 
 def color(level, colors)
