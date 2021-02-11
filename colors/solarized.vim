@@ -13,7 +13,7 @@ if &background ==# "light"
   hi ConId cterm=NONE gui=NONE ctermfg=3 guifg=#b58900 ctermbg=NONE guibg=NONE
   hi Conceal cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi Constant cterm=NONE gui=NONE ctermfg=6 guifg=#2aa198 ctermbg=NONE guibg=NONE
-  hi Cursor cterm=NONE gui=NONE ctermfg=15 guifg=#fdf6e3 ctermbg=11 guibg=#657b83
+  hi Cursor cterm=reverse gui=reverse ctermfg=8 guifg=#002732 ctermbg=15 guibg=#fdf6e3
   hi CursorColumn cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=7 guibg=#eee8d5
   hi CursorLine cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=7 guibg=#eee8d5
   hi CursorLineNr cterm=NONE gui=NONE ctermfg=14 guifg=#93a1a1 ctermbg=NONE guibg=NONE
@@ -36,7 +36,7 @@ if &background ==# "light"
   hi NonText cterm=bold gui=bold ctermfg=12 guifg=#839496 ctermbg=NONE guibg=NONE
   hi Pmenu cterm=reverse gui=reverse ctermfg=11 guifg=#657b83 ctermbg=7 guibg=#eee8d5
   hi PmenuSbar cterm=reverse gui=reverse ctermfg=0 guifg=#073642 ctermbg=11 guibg=#657b83
-  hi PmenuSel cterm=reverse gui=reverse ctermfg=14 guifg=#93a1a1 ctermbg=0 guibg=#073642
+  hi PmenuSel cterm=NONE gui=NONE ctermfg=0 guifg=#073642 ctermbg=14 guibg=#93a1a1
   hi PmenuThumb cterm=reverse gui=reverse ctermfg=11 guifg=#657b83 ctermbg=15 guibg=#fdf6e3
   hi PreProc cterm=NONE gui=NONE ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi Question cterm=bold gui=bold ctermfg=6 guifg=#2aa198 ctermbg=NONE guibg=NONE
@@ -54,7 +54,7 @@ if &background ==# "light"
   hi StatusLineNC cterm=reverse gui=reverse ctermfg=12 guifg=#839496 ctermbg=7 guibg=#eee8d5
   hi TabLine cterm=underline gui=underline ctermfg=11 guifg=#657b83 ctermbg=7 guibg=#eee8d5
   hi TabLineFill cterm=underline gui=underline ctermfg=11 guifg=#657b83 ctermbg=7 guibg=#eee8d5
-  hi TabLineSel cterm=underline,reverse gui=underline,reverse ctermfg=14 guifg=#93a1a1 ctermbg=0 guibg=#073642
+  hi TabLineSel cterm=underline gui=underline ctermfg=0 guifg=#073642 ctermbg=14 guibg=#93a1a1
   hi Title cterm=bold gui=bold ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi Todo cterm=bold gui=bold ctermfg=5 guifg=#d33682 ctermbg=NONE guibg=NONE
   hi Type cterm=NONE gui=NONE ctermfg=3 guifg=#b58900 ctermbg=NONE guibg=NONE
@@ -227,7 +227,7 @@ else
   hi ConId cterm=NONE gui=NONE ctermfg=3 guifg=#b58900 ctermbg=NONE guibg=NONE
   hi Conceal cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi Constant cterm=NONE gui=NONE ctermfg=6 guifg=#2aa198 ctermbg=NONE guibg=NONE
-  hi Cursor cterm=NONE gui=NONE ctermfg=8 guifg=#002732 ctermbg=12 guibg=#839496
+  hi Cursor cterm=reverse gui=reverse ctermfg=15 guifg=#fdf6e3 ctermbg=8 guibg=#002732
   hi CursorColumn cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=0 guibg=#073642
   hi CursorLine cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=0 guibg=#073642
   hi CursorLineNr cterm=NONE gui=NONE ctermfg=10 guifg=#586e75 ctermbg=NONE guibg=NONE
@@ -250,7 +250,7 @@ else
   hi NonText cterm=bold gui=bold ctermfg=11 guifg=#657b83 ctermbg=NONE guibg=NONE
   hi Pmenu cterm=reverse gui=reverse ctermfg=12 guifg=#839496 ctermbg=0 guibg=#073642
   hi PmenuSbar cterm=reverse gui=reverse ctermfg=7 guifg=#eee8d5 ctermbg=12 guibg=#839496
-  hi PmenuSel cterm=reverse gui=reverse ctermfg=10 guifg=#586e75 ctermbg=7 guibg=#eee8d5
+  hi PmenuSel cterm=NONE gui=NONE ctermfg=7 guifg=#eee8d5 ctermbg=10 guibg=#586e75
   hi PmenuThumb cterm=reverse gui=reverse ctermfg=12 guifg=#839496 ctermbg=8 guibg=#002732
   hi PreProc cterm=NONE gui=NONE ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi Question cterm=bold gui=bold ctermfg=6 guifg=#2aa198 ctermbg=NONE guibg=NONE
@@ -268,7 +268,7 @@ else
   hi StatusLineNC cterm=reverse gui=reverse ctermfg=11 guifg=#657b83 ctermbg=0 guibg=#073642
   hi TabLine cterm=underline gui=underline ctermfg=12 guifg=#839496 ctermbg=0 guibg=#073642
   hi TabLineFill cterm=underline gui=underline ctermfg=12 guifg=#839496 ctermbg=0 guibg=#073642
-  hi TabLineSel cterm=underline,reverse gui=underline,reverse ctermfg=10 guifg=#586e75 ctermbg=7 guibg=#eee8d5
+  hi TabLineSel cterm=underline gui=underline ctermfg=7 guifg=#eee8d5 ctermbg=10 guibg=#586e75
   hi Title cterm=bold gui=bold ctermfg=9 guifg=#cb4b16 ctermbg=NONE guibg=NONE
   hi Todo cterm=bold gui=bold ctermfg=5 guifg=#d33682 ctermbg=NONE guibg=NONE
   hi Type cterm=NONE gui=NONE ctermfg=3 guifg=#b58900 ctermbg=NONE guibg=NONE

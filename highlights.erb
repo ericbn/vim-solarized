@@ -48,7 +48,7 @@ end
   hi ConId<%= hi(fg: yellow) %>
   hi Conceal<%= hi(fg: blue) %>
   hi Constant<%= hi(fg: cyan) %>
-  hi Cursor<%= hi(fg: base03, bg: base0) %>
+  hi Cursor<%= hi(attr: "reverse", fg: base3, bg: base03) %>
   hi CursorColumn<%= hi(bg: base02) %>
   hi CursorLine<%= hi(bg: base02) %>
   hi CursorLineNr<%= hi(fg: base01) %>
@@ -71,7 +71,7 @@ end
   hi NonText<%= hi(attr: "bold", fg: base00) %>
   hi Pmenu<%= hi(attr: "reverse", fg: base0, bg: base02) %>
   hi PmenuSbar<%= hi(attr: "reverse", fg: base2, bg: base0) %>
-  hi PmenuSel<%= hi(attr: "reverse", fg: base01, bg: base2) %>
+  hi PmenuSel<%= hi(fg: base2, bg: base01) %>
   hi PmenuThumb<%= hi(attr: "reverse", fg: base0, bg: base03) %>
   hi PreProc<%= hi(fg: orange) %>
   hi Question<%= hi(attr: "bold", fg: cyan) %>
@@ -89,7 +89,7 @@ end
   hi StatusLineNC<%= hi(attr: "reverse", fg: base00, bg: base02) %>
   hi TabLine<%= hi(attr: "underline", fg: base0, bg: base02) %>
   hi TabLineFill<%= hi(attr: "underline", fg: base0, bg: base02) %>
-  hi TabLineSel<%= hi(attr: "underline,reverse", fg: base01, bg: base2) %>
+  hi TabLineSel<%= hi(attr: "underline", fg: base2, bg: base01) %>
   hi Title<%= hi(attr: "bold", fg: orange) %>
   hi Todo<%= hi(attr: "bold", fg: magenta) %>
   hi Type<%= hi(fg: yellow) %>
