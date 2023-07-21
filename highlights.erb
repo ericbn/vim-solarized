@@ -16,11 +16,21 @@ blue    = [ "4", "#268bd2"] # L*a*b 55 -10 -45
 cyan    = [ "6", "#2aa198"] # L*a*b 60 -35 -05
 green   = [ "2", "#719e07"] # L*a*b 60 -30  60 experimental
 
+bgred   = ["52", "#620000"] # L*a*b 10  65  45
+bgblue  = ["18", "#002c67"] # L*a*b 15 -10 -45
+bgblue1 = ["20", "#004e8d"] # L*a*b 30 -10 -45
+bggreen = ["22", "#1c4a00"] # L*a*b 27 -30  60
+
 if background == "light"
   base03, base3 = base3, base03
   base02, base2 = base2, base02
   base01, base1 = base1, base01
   base00, base0 = base0, base00
+
+  bgred   = ["223", "#ffc6ac"] # L*a*b 100  65  45
+  bgblue  = ["159", "#b0ffff"] # L*a*b 97 -10 -45
+  bgblue1 = ["117", "#92e2ff"] # L*a*b 87 -10 -45
+  bggreen = ["191", "#caf76d"] # L*a*b 90 -30  60
 end
 
 def attr(attr)
@@ -52,10 +62,10 @@ end
   hi CursorColumn<%= hi(bg: base02) %>
   hi CursorLine<%= hi(bg: base02) %>
   hi CursorLineNr<%= hi(fg: base01) %>
-  hi DiffAdd<%= hi(fg: green, bg: base02) %>
-  hi DiffChange<%= hi(fg: yellow, bg: base02) %>
-  hi DiffDelete<%= hi(fg: red, bg: base02) %>
-  hi DiffText<%= hi(fg: blue, bg: base02) %>
+  hi DiffAdd<%= hi(bg: bggreen) %>
+  hi DiffChange<%= hi(bg: bgblue) %>
+  hi DiffDelete<%= hi(fg: bgred, bg: bgred) %>
+  hi DiffText<%= hi(bg: bgblue1) %>
   hi Directory<%= hi(fg: blue) %>
   hi Error<%= hi(attr: "bold", fg: red) %>
   hi ErrorMsg<%= hi(attr: "reverse", fg: red) %>

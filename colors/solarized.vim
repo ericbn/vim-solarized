@@ -17,10 +17,10 @@ if &background ==# "light"
   hi CursorColumn cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=7 guibg=#eee8d5
   hi CursorLine cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=7 guibg=#eee8d5
   hi CursorLineNr cterm=NONE gui=NONE ctermfg=14 guifg=#93a1a1 ctermbg=NONE guibg=NONE
-  hi DiffAdd cterm=NONE gui=NONE ctermfg=2 guifg=#719e07 ctermbg=7 guibg=#eee8d5
-  hi DiffChange cterm=NONE gui=NONE ctermfg=3 guifg=#b58900 ctermbg=7 guibg=#eee8d5
-  hi DiffDelete cterm=NONE gui=NONE ctermfg=1 guifg=#dc322f ctermbg=7 guibg=#eee8d5
-  hi DiffText cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=7 guibg=#eee8d5
+  hi DiffAdd cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=191 guibg=#caf76d
+  hi DiffChange cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=159 guibg=#b0ffff
+  hi DiffDelete cterm=NONE gui=NONE ctermfg=223 guifg=#ffc6ac ctermbg=223 guibg=#ffc6ac
+  hi DiffText cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=117 guibg=#92e2ff
   hi Directory cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi Error cterm=bold gui=bold ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
   hi ErrorMsg cterm=reverse gui=reverse ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
@@ -231,10 +231,10 @@ else
   hi CursorColumn cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=0 guibg=#073642
   hi CursorLine cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=0 guibg=#073642
   hi CursorLineNr cterm=NONE gui=NONE ctermfg=10 guifg=#586e75 ctermbg=NONE guibg=NONE
-  hi DiffAdd cterm=NONE gui=NONE ctermfg=2 guifg=#719e07 ctermbg=0 guibg=#073642
-  hi DiffChange cterm=NONE gui=NONE ctermfg=3 guifg=#b58900 ctermbg=0 guibg=#073642
-  hi DiffDelete cterm=NONE gui=NONE ctermfg=1 guifg=#dc322f ctermbg=0 guibg=#073642
-  hi DiffText cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=0 guibg=#073642
+  hi DiffAdd cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=22 guibg=#1c4a00
+  hi DiffChange cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=18 guibg=#002c67
+  hi DiffDelete cterm=NONE gui=NONE ctermfg=52 guifg=#620000 ctermbg=52 guibg=#620000
+  hi DiffText cterm=NONE gui=NONE ctermfg=NONE guifg=NONE ctermbg=20 guibg=#004e8d
   hi Directory cterm=NONE gui=NONE ctermfg=4 guifg=#268bd2 ctermbg=NONE guibg=NONE
   hi Error cterm=bold gui=bold ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
   hi ErrorMsg cterm=reverse gui=reverse ctermfg=1 guifg=#dc322f ctermbg=NONE guibg=NONE
