@@ -436,6 +436,7 @@ endif
 
 hi! link diffAdded Statement
 hi! link diffLine Identifier
+hi! link diffRemoved Special
 
 hi! link gitcommitDiscarded gitcommitComment
 hi! link gitcommitDiscardedArrow gitcommitDiscardedFile
